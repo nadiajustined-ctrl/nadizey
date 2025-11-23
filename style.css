@@ -134,40 +134,22 @@ h1{
 
 }
 /* restaurant */
-.resto{
+.card-resto{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     gap: 40px;
     margin-top: 50px;
 }
-.face{
-    position: absolute;
-    width: 400px;
-    height:300px ;
-    backface-visibility: hidden;
+ img{
     border-radius: 10px;
-    overflow: hidden;
-    transition: .5s;
+    width:400px ;
+    height:300px ;
 
 }
-.front{
-    box-shadow: 0 5px 10px #000;
-}
- .front img{
-    width: 100%;
-    height: 100%;
 
-}
-.front h4{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    background: rgba(0,0 ,0,0.4);
-    text-align: center;
-}
+
 
 .plage{
     display: flex;
@@ -242,45 +224,35 @@ h2{
     justify-content: space-between;
     text-align: center;
 }
-/* ---------- RESPONSIVE ---------- */
+
+/* ------------------ RESPONSIVE ------------------ */
 
 /* TABLETTE (max-width: 992px) */
 @media (max-width: 992px) {
 
-    /* na-vbar */
+    /* NAVBAR */
+    .nav-contaire {
+        flex-direction: column;
+    }
     .nav-bar {
         gap: 1.5rem;
-        font-size: 1rem;
     }
 
-    /* hero */
+    /* HERO */
     .hero {
         height: 80vh;
         background-size: cover;
         padding: 20px;
+        text-align: center;
     }
     .hero-content h1 {
-        font-size: 2.8rem;
+        font-size: 3rem;
     }
     .hero-content p {
         font-size: 1.4rem;
     }
 
-    /* card */
-    .card-container {
-        flex-direction: row;
-        gap: 20px;
-    }
-    .card {
-        width: 280px;
-        margin: 20px;
-    }
-    .card img {
-        width: 100%;
-        height: 180px;
-    }
-
-    /* hotels */
+    /* HOTELS */
     .card-hotels {
         width: 280px;
         margin: 20px;
@@ -290,7 +262,7 @@ h2{
         height: 170px;
     }
 
-    /* plage */
+    /* PLAGES */
     .plage {
         flex-wrap: wrap;
     }
@@ -300,7 +272,7 @@ h2{
     }
 
     /* RESTAURANT */
-    .face {
+    .card-resto {
         width: 300px;
         height: 230px;
     }
@@ -310,26 +282,23 @@ h2{
 @media (max-width: 768px) {
 
     body {
-        padding: 0;
-        margin: 0;
         overflow-x: hidden;
     }
 
-    /* nav-bar */
+    /* NAVBAR */
     .nav-contaire {
         flex-direction: column;
     }
     .nav-bar {
         flex-wrap: wrap;
-        font-size: 0.9rem;
+        gap: 1rem;
     }
 
-    /* hero */
+    /* HERO */
     .hero {
         height: 70vh;
-        padding: 10px;
-        text-align: center;
         background-position: center;
+        padding: 15px;
     }
     .hero-content {
         font-size: 16px;
@@ -338,10 +307,10 @@ h2{
         font-size: 2.2rem;
     }
     .hero-content p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
-    /* INPUT SEARCH */
+    /* SEARCH FORM */
     .search-form {
         display: flex;
         flex-direction: column;
@@ -354,7 +323,7 @@ h2{
         width: 100%;
     }
 
-    /* card */
+    /* CARDS */
     .card-container {
         flex-direction: column;
         align-items: center;
@@ -371,14 +340,14 @@ h2{
         width: 90%;
     }
 
-    /* hotels*/
+    /* PLAGES */
     .image {
         width: 90%;
         height: 160px;
     }
 
-    /* resto */
-    .face {
+    /* RESTAURANT */
+    .card-resto{
         width: 90%;
         height: 200px;
     }
@@ -387,12 +356,11 @@ h2{
 /* PETITS TÉLÉPHONES (max-width: 480px) */
 @media (max-width: 480px) {
 
-    /* titres */
     h1, h2, h3 {
         font-size: 1.3rem;
     }
 
-    /* hero */
+    /* HERO */
     .hero {
         height: 60vh;
     }
@@ -400,8 +368,8 @@ h2{
         font-size: 1.8rem;
     }
 
-    /* card-hotels*/
-    .card, 
+    /* CARDS */
+    .card,
     .card-hotels {
         width: 95%;
     }
@@ -412,10 +380,7 @@ h2{
     }
 
     /* RESTAURANT */
-    .face {
+    .card-resto{
         height: 180px;
     }
 }
-
-
-
