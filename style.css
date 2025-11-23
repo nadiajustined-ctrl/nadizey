@@ -333,21 +333,22 @@ h2{
         align-items: center;
     }
     .card {
-        width: 90%;
+        width: 50%;
     }
     .card img {
-        height: 160px;
+        height: 360px;
     }
 
     /* HOTELS */
     .card-hotels {
-        width: 90%;
+        flex-wrap:wrap;
+        width:300PX;
     }
 
     /* PLAGES */
     .image {
-        width: 90%;
-        height: 160px;
+        width: 400px;
+        height: 350px;
     }
 
     /* RESTAURANT */
@@ -375,7 +376,7 @@ h2{
     /* CARDS */
     .card,
     .card-hotels {
-        width: 95%;
+        width: 400PX;
     }
 
     /* PLAGES */
@@ -388,3 +389,4 @@ h2{
         height: 280px;
     }
 }
+
